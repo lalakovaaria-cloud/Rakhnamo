@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-export default function MentorsPage() {
+export default function RegisterPage() {
   const router = useRouter();
   useEffect(() => { router.replace("/home"); }, [router]);
   return null;
