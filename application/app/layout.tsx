@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./theme-provider";
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
@@ -17,11 +18,13 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        <div className="min-h-screen flex justify-center" style={{ background: "#0b1220" }}>
-          <div className="w-full max-w-sm">
-            {children}
+        <ThemeProvider>
+          <div className="min-h-screen flex justify-center" style={{ background: "var(--bg-main)" }}>
+            <div className="w-full max-w-sm">
+              {children}
+            </div>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );
