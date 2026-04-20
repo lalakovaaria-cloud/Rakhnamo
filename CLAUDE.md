@@ -53,6 +53,8 @@ Every page uses `"use client"` directive.
 ## Active Technologies
 - TypeScript (React 19 / Next.js 16) + Tailwind 4, inline `style` props (no component library) (001-frontend-redesign)
 - N/A — all data hardcoded as static arrays in page files (001-frontend-redesign)
+- TypeScript 5 / React 19 / Next.js 16 + React Context API (built-in) — no new packages (006-add-i18n)
+- `localStorage` (browser key `rakhnamo_lang`) (006-add-i18n)
 
 ## Recent Changes
 - 001-frontend-redesign: Added TypeScript (React 19 / Next.js 16) + Tailwind 4, inline `style` props (no component library)

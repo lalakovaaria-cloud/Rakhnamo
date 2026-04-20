@@ -28,6 +28,13 @@ function saveProfile(profile: UserProfile): void {
   localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
 }
 
+// ── Logout ───────────────────────────────────────────────────
+
+export function clearProfile(): void {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(PROFILE_KEY);
+}
+
 // ── User ─────────────────────────────────────────────────────
 
 export function getUser(): User | null {
